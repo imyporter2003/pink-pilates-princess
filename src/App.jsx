@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Star, Heart, Music } from 'lucide-react';
+import { Star, Heart, Music, Instagram, Video, Pin } from 'lucide-react';
 import MusicPlayer from './components/MusicPlayer';
 import StickerCanvas from './components/StickerCanvas';
 import MouseTrail from './components/MouseTrail';
@@ -59,6 +59,19 @@ function Layout({ children }) {
               loading="lazy">
             </iframe>
           </div>
+        </div>
+
+        {/* Social Links */}
+        <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', margin: '20px 0' }}>
+          <a href="https://instagram.com" target="_blank" className="social-btn" style={{
+            background: 'rgba(255,255,255,0.4)', padding: '10px', borderRadius: '50%', color: '#E1306C', display: 'flex'
+          }}><Instagram size={20} /></a>
+          <a href="https://tiktok.com" target="_blank" className="social-btn" style={{
+            background: 'rgba(255,255,255,0.4)', padding: '10px', borderRadius: '50%', color: '#000', display: 'flex'
+          }}><Video size={20} /></a>
+          <a href="https://pinterest.com" target="_blank" className="social-btn" style={{
+            background: 'rgba(255,255,255,0.4)', padding: '10px', borderRadius: '50%', color: '#E60023', display: 'flex'
+          }}><Pin size={20} /></a>
         </div>
 
         {/* Secret Door Trigger - Tiny mushroom at bottom of sidebar */}
