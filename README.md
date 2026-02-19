@@ -1,16 +1,33 @@
-# React + Vite
+# 🎀 Pink Pilates Princess Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A maximalist, interactive Y2K-style blog built with **React + Vite**.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **Liquid Glass Design**: Glossy, blurry, high-end "wet" look UI.
+*   **Use Interactive Pages**:
+    *   **Moodboard**: Polaroids that tilt on hover.
+    *   **Aura Quiz**: Changes the *entire website theme* based on your answers.
+    *   **Clueless Closet**: 90s retro outfit matcher.
+    *   **Guestbook**: Leave a note and see hearts explode! 💖
+    *   **Fairy Garden**: A secret hidden page... 🍄
+*   **Widgets**:
+    *   Persistent Spotify Player (loops across pages).
+    *   Hydration Tracker 💧.
+    *   Daily Affirmations ✨.
+    *   Draggable Stickers 🎀.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Framework**: React (Vite)
+*   **Styling**: Vanilla CSS (Variables, Glassmorphism, Animations)
+*   **Icons**: Lucide React + Custom Emojis
+*   **Animation**: Framer Motion
 
-## Expanding the ESLint configuration
+## 🚀 Deployment
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project includes a `netlify.toml` for easy deployment on Netlify.
+Just connect your repo and it will auto-detect the settings!
+
+---
+*Made with 💖 for Imogen*
