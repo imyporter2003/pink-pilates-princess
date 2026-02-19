@@ -1,0 +1,128 @@
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    /* Slightly wider for Spotify embed */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1000;
+    border: 2px solid rgba(255, 182, 193, 0.6);
+    background: rgba(255, 255, 255, 0.4);
+    /* More opaque for visibility */
+}
+
+.spotify-player-container {
+    padding-bottom: 5px;
+}
+
+.player-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family: var(--font-display);
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+    padding: 0 5px;
+}
+
+.window-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    opacity: 0.7;
+}
+
+.player-decoration {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-text);
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.player-track-info {
+    font-family: var(--font-display);
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 2px dotted var(--color-primary);
+    padding-bottom: 5px;
+}
+
+.scrolling-text {
+    display: inline-block;
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.player-btn {
+    background: none;
+    border: none;
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.player-btn:hover {
+    transform: scale(1.2);
+    color: var(--color-primary);
+}
+
+.play-btn {
+    background: var(--color-bg);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-secondary);
+    box-shadow: 0 0 10px var(--color-primary);
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-secondary);
+}
+
+.volume-bar {
+    flex-grow: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.volume-level {
+    height: 100%;
+    background: var(--color-secondary);
+}
